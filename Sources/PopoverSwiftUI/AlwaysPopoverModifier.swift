@@ -68,6 +68,10 @@ struct AlwaysPopoverModifier<PopoverContent>: ViewModifier where PopoverContent:
         
         guard let sourceVC = view.closestVC() else { return }
         if let presentedVC = sourceVC.presentedViewController {
+            guard presentedVC != contentController else {
+                return
+            }
+            
             presentedVC.dismiss(animated: true) {
                 sourceVC.present(contentController, animated: true)
             }
