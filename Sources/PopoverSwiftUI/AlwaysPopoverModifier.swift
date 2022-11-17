@@ -8,25 +8,6 @@
 import SwiftUI
 import UIKit
 
-//public enum ArrowDirection {
-//    case any, up, down, left, right
-//
-//    var popoverDirection: UIPopoverArrowDirection {
-//        switch self {
-//        case .any:
-//            return .any
-//        case .up:
-//            return .up
-//        case .down:
-//            return .down
-//        case .left:
-//            return .left
-//        case .right:
-//            return .right
-//        }
-//    }
-//}
-
 struct AlwaysPopoverModifier<PopoverContent>: ViewModifier where PopoverContent: View {
     
     let isPresented: Binding<Bool>

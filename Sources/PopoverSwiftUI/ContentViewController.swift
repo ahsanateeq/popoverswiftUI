@@ -31,6 +31,6 @@ class ContentViewController<V>: UIHostingController<V>, UIPopoverPresentationCon
     }
 
     func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
-        self.isPresented.wrappedValue = false
+//        self.isPresented.wrappedValue = false
     }
 }
